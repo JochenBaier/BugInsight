@@ -1,4 +1,4 @@
-```bat
+```
 BugInsight.exe --help
 Usage: BugInsight.exe [Options] [Configuration] -- ["]application_to_test.exe["] [application_to_test options]:
 

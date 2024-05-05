@@ -4,9 +4,10 @@ A memory leak and deadlock finder for C, C++
 ## Introduction
 
 **BugInsight** is a tool for finding memory leaks and potential deadlocks in C/C++ software for Microsoft Windows OS. 
-BugInsight uses (improved) parts from  [Visual Leak Detector](https://github.com/KindDragon/vld) for memory leak finding and the deadlock detection algorithm is from the C++ library [Abseil](https://abseil.io/docs/cpp/guides/synchronization#deadlock-detection). 
+BugInsight uses (improved) parts from  [Visual Leak Detector](https://github.com/KindDragon/vld) for memory leak finding. The deadlock detection algorithm is from the C++ library [Abseil](https://abseil.io/docs/cpp/guides/synchronization#deadlock-detection). 
 
-Expect low overhead with I/O bound (e.g. TCP/IP) application or Qt GUI application.  A real world test with a TCP/IP application shows a slowdown of 10%, with option "--callstacks=false" 5%.
+Expect low overhead with I/O bound (e.g. TCP/IP) applications or Qt GUI applications.  A real world test with a TCP/IP application shows a slowdown of
+10 %, with option "--callstacks=false" 5 %.
 
 BugInsight can be used manually and automated in a CI system. BugInsight does not need to be linked and no rebuilding of the application is needed.
 
@@ -26,14 +27,14 @@ BugInsight.exe --on_error=fail -- example_deadlock.exe
 BugInsight.exe --ignore_modules=libssl-3-x64.dll,libcrypto-3-x64.dll -- app.exe --app_option
 ```
 
-Example output memory leak detection:  [Example_Output](examples\example_memory_leak\Example_Output.md) 
-Example output deadlock detection:  [Example_Output](examples\example_deadlock\Example_Output.md)
+Example output memory leak detection: [Example_Output](examples/example_memory_leak/Example_Output.md)   
+Example output deadlock detection: [Example_Output](examples/example_deadlock/Example_Output.md)
 
 <u>Usage in VS debugger</u> (the VS output window will display clickable call stacks):
 
 1. Install VS Extension [Child Process Debugging Power Tool](https://devblogs.microsoft.com/devops/introducing-the-child-process-debugging-power-tool/)
 2. VS project properties:  
-   Debugging->Command: 'path to BugInsight.exe'
+   Debugging->Command: 'path to BugInsight.exe'  
    Debugging->Command Arguments: '-- $(TargetPath)'
 
 ## Application under test requirements
@@ -58,15 +59,14 @@ Example output deadlock detection:  [Example_Output](examples\example_deadlock\E
 
 ## Monitored APIs
 
-BugInsight can detect leaks or deadlocks from the following APIs: [Monitored APIs](Monitored_APIs.md). Please report missing APIs.
-BugInsight monitors all modules (Exe ,DLL) used by application under test <u>excluding</u> modules provided by Windows OS (DLLs with Copyright info: 'Microsoft Corporation', e.g. Kernel32.dll).
+BugInsight can detect leaks or deadlocks from the following APIs: [Monitored APIs](Monitored_APIs.md). Please report missing APIs.  
+BugInsight monitors all modules (Exe ,DLL) used by application under test <u>excluding</u> modules provided by Windows OS (DLLs with Copyright info: 'Microsoft Corporation', e.g. Kernel32.dll).  
 BugInsight does <u>not yet</u> monitor handle leaks.
 
 ## Command Line Options, Runtime API
 
-[Command Line Options](CommandLineOptions.md)
-
-[Runtime_API](Runtime_API.md)
+[Command Line Options](CommandLineOptions.md)  
+[Runtime_API](Runtime_API.md)  
 
 ## Build BugInsight from source
 
