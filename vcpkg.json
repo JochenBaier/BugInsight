@@ -1,0 +1,25 @@
+{
+  "name": "buginsight",
+  "version": "0.1.0.0",
+  "license": "Apache-2.0",
+    "dependencies": [
+      "fmt",
+      "xxhash",
+      "boost-core",
+      "boost-range",
+      "boost-unordered",
+      "boost-algorithm",
+      "boost-format",
+      "boost-lexical-cast",
+      "boost-filesystem",
+      "boost-dll",
+      "boost-interprocess",
+      "boost-program-options",
+      "boost-interprocess",
+      "boost-scope-exit",
+      "boost-serialization",
+      "spdlog",
+      "detours",
+      "openssl"
+    ]
+}

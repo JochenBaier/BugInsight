@@ -1,0 +1,106 @@
+// Microsoft Visual C++ generated resource script.
+//
+//#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+"resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+"#include ""winres.h""\r\n"
+"\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+"\r\n"
+"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#define VER_FILEVERSION             @VERSION_MAJOR@,@VERSION_MINOR@,@VERSION_BUILD@,@VERSION_REVISION@
+#define VER_FILEVERSION_STR         "@VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_BUILD@.@VERSION_REVISION@\0"
+
+#define VER_PRODUCTVERSION          @VERSION_MAJOR@,@VERSION_MINOR@,@VERSION_BUILD@,@VERSION_REVISION@
+#define VER_PRODUCTVERSION_STR      "@VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_BUILD@.@VERSION_REVISION@\0"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION VER_FILEVERSION
+PRODUCTVERSION VER_PRODUCTVERSION
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+FILEFLAGS 0x1L
+#else
+FILEFLAGS 0x0L
+#endif
+FILEOS 0x40004L
+FILETYPE 0x2L
+FILESUBTYPE 0x0L
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+BLOCK "0c0004b0"
+BEGIN
+VALUE "FileDescription", "BugInsight"
+VALUE "FileVersion", VER_FILEVERSION_STR
+VALUE "InternalName", "BugInsight.exe"
+VALUE "LegalCopyright", "Copyright (C) 2024 Jochen Baier, email@jochen-baier.de"
+VALUE "OriginalFilename", "BugInsight.exe"
+VALUE "ProductName", "BugInsight"
+VALUE "ProductVersion", VER_PRODUCTVERSION_STR
+VALUE "CompanyName", "BugInsight Developer"
+END
+END
+BLOCK "VarFileInfo"
+BEGIN
+VALUE "Translation", 0xc00, 1200
+END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
