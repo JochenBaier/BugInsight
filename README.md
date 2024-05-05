@@ -13,7 +13,8 @@ BugInsight can be used manually and automated in a CI system. BugInsight does no
 
 ## Install
 
-FIXME download and unzip
+1. Download latest release Zip BugInsight-x.x.x.x.zip from https://github.com/JochenBaier/BugInsight/releases
+2. Unzip to any location
 
 ## Usage
 
