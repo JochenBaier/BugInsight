@@ -5,7 +5,7 @@ A memory leak and deadlock finder for C, C++
 
 **BugInsight** is a tool for finding memory leaks and potential deadlocks in C/C++ software for Microsoft Windows OS. 
 
-Main reason for use is to test Windows applications that <u>cannot be tested</u> under Linux (e.g. with AddressSanitizer, ThreadSanitizer, Valgrind) and to test the <u>Windows only parts</u> of an applications. 
+Main reason for use is to test Windows applications that <u>cannot be tested</u> under Linux (e.g. with AddressSanitizer, ThreadSanitizer, Valgrind) and to test the <u>Windows only parts</u> of an application. 
 
 An other reason is the low overhead with I/O bound (e.g. TCP/IP) applications or Qt GUI applications. A real world test with a TCP/IP application shows a slowdown of 10 %, with option "--callstacks=false" only 5 %.
 
