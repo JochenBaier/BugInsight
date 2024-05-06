@@ -4,16 +4,16 @@ A memory leak and deadlock finder for C, C++
 ## Introduction
 
 **BugInsight** is a tool for finding memory leaks and potential deadlocks in C/C++ software for Microsoft Windows OS. 
-BugInsight uses (improved) parts from  [Visual Leak Detector](https://github.com/KindDragon/vld) for memory leak finding. The deadlock detection algorithm is from the C++ library [Abseil](https://abseil.io/docs/cpp/guides/synchronization#deadlock-detection). 
 
-Expect low overhead with I/O bound (e.g. TCP/IP) applications or Qt GUI applications.  A real world test with a TCP/IP application shows a slowdown of
-10 %, with option "--callstacks=false" 5 %.
+Main reason for use is to test Windows applications that <u>cannot be tested</u> under Linux (e.g. with AddressSanitizer, ThreadSanitizer, Valgrind) and to test the <u>Windows only parts</u> of an applications. 
+
+An other reason is the low overhead with I/O bound (e.g. TCP/IP) applications or Qt GUI applications. A real world test with a TCP/IP application shows a slowdown of 10 %, with option "--callstacks=false" only 5 %.
 
 BugInsight can be used manually and automated in a CI system. BugInsight does not need to be linked and no rebuilding of the application is needed.
 
 ## Install
 
-1. Download latest release Zip BugInsight-x.x.x.x.zip from https://github.com/JochenBaier/BugInsight/releases
+1. Download latest release Zip BugInsight-x.x.x.x.zip from [releases](https://github.com/JochenBaier/BugInsight/releases)
 2. Unzip to any location
 
 ## Usage
@@ -47,6 +47,7 @@ Example output deadlock detection: [Example_Output](examples/example_deadlock/Ex
 
 ## Features:
 
+- BugInsight uses (improved) parts from [Visual Leak Detector](https://github.com/KindDragon/vld) for memory leak finding. The deadlock detection algorithm is from the C++ library [Abseil](https://abseil.io/docs/cpp/guides/synchronization#deadlock-detection). 
 - Finding memory leaks and wrong memory API usage e.g. delete, delete[] mismatch
 - Deadlock detection and detect wrong lock usage with CriticalSection and std::mutex, std::recursive_mutex
 - Test applications (or parts of it) that cannot be tested on Linux with ThreadSanitizer and AddressSanitizer
