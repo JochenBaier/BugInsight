@@ -89,6 +89,6 @@ BugInsight does <u>not yet</u> monitor handle leaks.
 
 ## License
 
-BugInsight is licensed under the terms of the Apache 2.0 license. See LICENSE for more information.
+BugInsight is licensed under the terms of the GNU General Public License v3.0 license. See LICENSE for more information.
 
  

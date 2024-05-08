@@ -4,6 +4,7 @@ Copyright 2024 Jochen Baier <email@jochen-baier.de>
 
 This files contains code derived from 'Abseil - C++ Common Libraries'
 https://github.com/abseil/abseil-cpp, Copyright 2017 The Abseil Authors
+License: Apache-2.0 
  * graphcycles.cc/graphcycles.h 
  * low_level_alloc.cc/low_level_alloc.h
  * stacktrace.cc/stacktrace.h
@@ -11,6 +12,7 @@ https://github.com/abseil/abseil-cpp, Copyright 2017 The Abseil Authors
 
 This files contains code derived from 'Visual Leak Detector'
 https://github.com/KindDragon/vld, Copyright © 2005-2017 VLD Team
+License: LGPL-2.1
  * iat_helper.cpp
  * iat_patching.cpp
  * ldr_loader_lock.cpp
